@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Webjump_WorldPet::menu" title="PetKind"
+             module="Webjump_WorldPet"
+             resource="Webjump_WorldPet::menu"
+             sortOrder="10"/>
+
+        <add id="Webjump_WorldPet::item"
+             title="Manage PetKind"
+             module="Webjump_WorldPet"
+             resource="Webjump_WorldPet::item"
+             parent="Webjump_WorldPet::menu" action="uiexample/index/index"/>
+    </menu>
+</config>

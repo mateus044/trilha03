@@ -1,0 +1,18 @@
+{
+    "pet_kind_customer_table": {
+        "column": {
+            "entity_id": true,
+            "name_pet": true,
+            "type_pet": true,
+            "customer_id": true
+        },
+        "index": {
+            "PET_KIND_CUSTOMER_TABLE_ENTITY_ID": true,
+            "PET_KIND_CUSTOMER_TABLE_NAME_PET": true
+        },
+        "constraint": {
+            "PRIMARY": true,
+            "PET_KIND_CUSTOMER_TABLE_CUSTOMER_ID_CUSTOMER_ENTITY_ENTITY_ID": true
+        }
+    }
+}

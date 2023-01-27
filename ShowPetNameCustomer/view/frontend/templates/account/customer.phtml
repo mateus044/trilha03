@@ -1,0 +1,23 @@
+<?php
+/**
+ * @author      Webjump Develop Team <dev@webjump.com.br>
+ * @copyright   2022 Webjump (http://www.webjump.com.br)
+ * @license     http://www.webjump.com.br Copyright
+ * @link        http://www.webjump.com.br
+ */
+
+use Magento\Framework\View\Element\Template;
+use Webjump\ShowPetNameCustomer\ViewModel\ShowPetNameAfterLogin;
+
+/** @var Template $block */
+/** @var ShowPetNameAfterLogin $viewModel */
+
+$viewModel = $block->getViewModel();
+$viewModel->isLoggedIn();
+?>
+
+<?php if ($viewModel->isLoggedIn() && $viewModel->isModuleEnable()): ?>
+    <li class="customer-welcome">
+        <?= __('Pet Name: ' . $viewModel->getPetNameCustomer() . " | Type: " . $viewModel->getPetKindCustomer()) ?>
+    </li>
+<?php endif; ?>
